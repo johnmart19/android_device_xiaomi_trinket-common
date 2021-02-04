@@ -157,6 +157,7 @@ ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD := true
 
 # Sepolicy
+SELINUX_IGNORE_NEVERALLOWS := true
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
